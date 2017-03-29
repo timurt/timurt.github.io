@@ -1,0 +1,1229 @@
+<html>
+	<head>
+		<title>checkstyle xml difference report</title>
+		<style type="text/css" media="all">@import url("./css/maven-base.css");@import url("./css/maven-theme.css"); );</style>
+		<http-equiv http-equiv="Content-Language" content="en"></http-equiv>
+	</head>
+	<body class="composite">
+		<div id="contentBox">
+			<div class="section">
+				<h2 a="Checkstyle XML difference report">Checkstyle XML difference report</h2>
+				This is symmetric difference generated from two checkstyle-result.xml reports. <br/>
+				All matching records from each XML file are deleted, then remaining records are merged into single report. <br>
+		        <a href="https://github.com/checkstyle/contribution/tree/master/patch-diff-report-tool">Utility that generated this report.</a>
+			</div>
+
+			
+				<h2 a="Checkstyle configuration report">Checkstyle configuration report</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+							<tr class="a">
+								<th>Module Name</th>
+								<th>Base properties</th>
+								<th>Patch properties</th>
+							</tr>
+							
+								
+									<tr>
+										<td class="c">Checker</td>
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">BeforeExecutionExclusionFileFilter</td>
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">TreeWalker</td>
+										
+										<td class="c">
+											
+										</td>
+										
+										
+										<td class="c">
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">ClassDataAbstractionCoupling</td>
+										<td class="b">
+											
+												excludedClasses
+												
+													<li>HashMap, HashSet</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="a">
+											
+												excludedClasses
+												
+													<li>HashMap, HashSet</li>
+												
+												<br/>
+											
+												excludeClassesRegexps
+												
+													<li>^Array.*, .*Exception$</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+									</tr>
+									
+								
+									
+								
+									
+								
+								
+					</table>	
+				</div>
+			
+
+			<div class="section">
+				<h2 a="Summary:">Summary:</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+						<tr class="a">
+							<th>Report id</th>
+							<th>Files</th>
+							<th>Unique rows</th>
+							
+								<th>Severity-warning</th>
+							
+								<th>Severity-error</th>
+							
+						</tr>
+						<tr class="b">
+							<td>base</td>
+							<td id="filesBase">1465</td>
+							<td id="totalBase">38</td>
+							
+								<td id="warningSeverityNumBase">36</td>
+							
+								<td id="errorSeverityNumBase">2</td>
+							
+						</tr>
+						<tr class="a">
+							<td>patch</td>
+							<td id="filesPatch">1465</td>
+							<td id="totalPatch">29</td>
+							
+								<td id="warningSeverityNumPatch">27</td>
+							
+								<td id="errorSeverityNumPatch">2</td>
+							
+						</tr>
+						<tr class="d">
+							<td>difference</td>
+							<td id="filesDiff">27</td>
+							<td id="totalDiff">45</td>
+							
+								<td id="warningSeverityNumDiff">45</td>
+							
+								<td id="errorSeverityNumDiff">0</td>
+							
+						<tr>
+					</table>
+
+					<br />
+					Number of unique base messages reported below: <span id="uniqueMessagesBase">27</span><br />
+					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">18</span><br />
+				</div>
+			</div>
+
+			<div class="section">
+				<h2 a="Unique rows:">Unique rows:</h2>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/it/java/com/google/checkstyle/test/base/BaseCheckTestSupport.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A1" href = "#A1">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 16 (max allowed is 7) classes [ArrayList, BriefUtLogger, BufferedReader, ByteArrayInputStream, ByteArrayOutputStream, Checker, DefaultConfiguration, File, FileInputStream, IllegalStateException, InputStreamReader, Integer, LineNumberReader, MessageFormat, Properties, PropertiesExpander].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/it/java/com/google/checkstyle/test/base/BaseCheckTestSupport.java.html#L54">54</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td><a name="A2" href = "#A2">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 14 (max allowed is 7) classes [BriefUtLogger, BufferedReader, ByteArrayInputStream, ByteArrayOutputStream, Checker, DefaultConfiguration, File, FileInputStream, InputStreamReader, Integer, LineNumberReader, MessageFormat, Properties, PropertiesExpander].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/it/java/com/google/checkstyle/test/base/BaseCheckTestSupport.java.html#L54">54</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/it/resources/com/google/checkstyle/test/chapter4formatting/rule4861blockcommentstyle/InputCommentsIndentationCommentIsAtTheEndOfBlock.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A3" href = "#A3">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 8 (max allowed is 7) classes [DetailAST, Exception, Object, Runnable, String, Thread, int, java.util.ArrayList].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/it/resources/com/google/checkstyle/test/chapter4formatting/rule4861blockcommentstyle/InputCommentsIndentationCommentIsAtTheEndOfBlock.java.html#L9">9</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/Checker.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A4" href = "#A4">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 17 (max allowed is 7) classes [ArrayList, AuditEvent, BeforeExecutionFileFilterSet, CheckstyleException, DefaultContext, Error, FileText, FilterSet, IllegalStateException, Locale, LocalizedMessage, PackageObjectFactory, PropertyCacheFile, SeverityLevelCounter, String, TreeSet, UnsupportedEncodingException].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/Checker.java.html#L64">64</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td><a name="A5" href = "#A5">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 13 (max allowed is 7) classes [AuditEvent, BeforeExecutionFileFilterSet, DefaultContext, Error, FileText, FilterSet, Locale, LocalizedMessage, PackageObjectFactory, PropertyCacheFile, SeverityLevelCounter, String, TreeSet].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/Checker.java.html#L64">64</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/Main.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A6" href = "#A6">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 18 (max allowed is 7) classes [ArrayList, CheckstyleException, CliOptions, ConsoleHandler, DefaultLogger, DefaultParser, File, FileInputStream, FileOutputStream, Filter, HelpFormatter, IllegalStateException, LinkedList, Options, PackageObjectFactory, Properties, PropertiesExpander, XMLLogger].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/Main.java.html#L60">60</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td><a name="A7" href = "#A7">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 15 (max allowed is 7) classes [CliOptions, ConsoleHandler, DefaultLogger, DefaultParser, File, FileInputStream, FileOutputStream, Filter, HelpFormatter, LinkedList, Options, PackageObjectFactory, Properties, PropertiesExpander, XMLLogger].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/Main.java.html#L60">60</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/PropertyCacheFile.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A8" href = "#A8">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 11 (max allowed is 7) classes [BufferedInputStream, ByteArrayOutputStream, CheckstyleException, ExternalResource, File, FileInputStream, FileOutputStream, IllegalArgumentException, IllegalStateException, ObjectOutputStream, Properties].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/PropertyCacheFile.java.html#L63">63</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td><a name="A9" href = "#A9">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 8 (max allowed is 7) classes [BufferedInputStream, ByteArrayOutputStream, ExternalResource, File, FileInputStream, FileOutputStream, ObjectOutputStream, Properties].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/PropertyCacheFile.java.html#L63">63</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/TreeWalker.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A10" href = "#A10">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 9 (max allowed is 7) classes [CheckstyleException, DefaultContext, DetailAST, FileContents, GeneratedJavaLexer, GeneratedJavaRecognizer, SimpleEntry, StringReader, TokenStreamHiddenTokenFilter].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/TreeWalker.java.html#L63">63</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td><a name="A11" href = "#A11">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 8 (max allowed is 7) classes [DefaultContext, DetailAST, FileContents, GeneratedJavaLexer, GeneratedJavaRecognizer, SimpleEntry, StringReader, TokenStreamHiddenTokenFilter].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/TreeWalker.java.html#L63">63</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/ant/CheckstyleAntTask.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A12" href = "#A12">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 13 (max allowed is 7) classes [AntClassLoader, ArrayList, AuditListener, BuildException, DefaultLogger, File, FileInputStream, LogOutputStream, PackageObjectFactory, Path, Properties, PropertiesExpander, SeverityLevelCounter].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/ant/CheckstyleAntTask.java.html#L66">66</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td><a name="A13" href = "#A13">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 11 (max allowed is 7) classes [AntClassLoader, AuditListener, DefaultLogger, File, FileInputStream, LogOutputStream, PackageObjectFactory, Path, Properties, PropertiesExpander, SeverityLevelCounter].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/ant/CheckstyleAntTask.java.html#L66">66</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/api/AutomaticBean.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A14" href = "#A14">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 19 (max allowed is 7) classes [ArrayConverter, BeanUtilsBean, BooleanConverter, ByteConverter, CharacterConverter, CheckstyleException, ConvertUtilsBean, DoubleConverter, FloatConverter, IntegerConverter, LongConverter, PatternConverter, PropertyUtilsBean, RelaxedAccessModifierArrayConverter, RelaxedStringArrayConverter, ScopeConverter, ServerityLevelConverter, ShortConverter, UriConverter].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/api/AutomaticBean.java.html#L56">56</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td><a name="A15" href = "#A15">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 17 (max allowed is 7) classes [BeanUtilsBean, BooleanConverter, ByteConverter, CharacterConverter, ConvertUtilsBean, DoubleConverter, FloatConverter, IntegerConverter, LongConverter, PatternConverter, PropertyUtilsBean, RelaxedAccessModifierArrayConverter, RelaxedStringArrayConverter, ScopeConverter, ServerityLevelConverter, ShortConverter, UriConverter].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/api/AutomaticBean.java.html#L56">56</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/api/FileText.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A16" href = "#A16">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 12 (max allowed is 7) classes [ArrayList, BufferedReader, FileInputStream, FileNotFoundException, IllegalStateException, InputStreamReader, LineColumn, String, StringBuilder, StringReader, char, int].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/api/FileText.java.html#L55">55</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td><a name="A17" href = "#A17">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 9 (max allowed is 7) classes [BufferedReader, FileInputStream, InputStreamReader, LineColumn, String, StringBuilder, StringReader, char, int].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/api/FileText.java.html#L55">55</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/checks/AbstractTypeAwareCheck.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A18" href = "#A18">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 8 (max allowed is 7) classes [ArrayDeque, ClassAlias, ClassResolver, IllegalStateException, LocalizedMessage, RegularClass, Token, int].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/checks/AbstractTypeAwareCheck.java.html#L45">45</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/checks/TranslationCheck.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A19" href = "#A19">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 8 (max allowed is 7) classes [FileInputStream, IllegalArgumentException, LocalizedMessage, Object, Properties, ResourceBundle, String, TreeSet].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/checks/TranslationCheck.java.html#L104">104</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/RequireThisCheck.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A20" href = "#A20">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 9 (max allowed is 7) classes [AnonymousClassFrame, ArrayDeque, BlockFrame, ClassFrame, ConstructorFrame, Integer, LinkedList, MethodFrame, int].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/RequireThisCheck.java.html#L92">92</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td><a name="A21" href = "#A21">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 8 (max allowed is 7) classes [AnonymousClassFrame, BlockFrame, ClassFrame, ConstructorFrame, Integer, LinkedList, MethodFrame, int].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/RequireThisCheck.java.html#L92">92</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/checks/header/AbstractHeaderCheck.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A22" href = "#A22">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 8 (max allowed is 7) classes [ArrayList, BufferedInputStream, CheckstyleException, IllegalArgumentException, InputStreamReader, LineNumberReader, StringReader, UnsupportedEncodingException].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/checks/header/AbstractHeaderCheck.java.html#L48">48</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/checks/imports/CustomImportOrderCheck.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A23" href = "#A23">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 8 (max allowed is 7) classes [ArrayList, IllegalArgumentException, IllegalStateException, ImportDetails, RuleMatchForImport, StringBuilder, StringTokenizer, int].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/checks/imports/CustomImportOrderCheck.java.html#L304">304</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/gui/MainFrameModel.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A24" href = "#A24">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 8 (max allowed is 7) classes [ArrayList, CheckstyleException, File, FileContents, FileText, IllegalArgumentException, ParseTreeTableModel, StringBuilder].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/gui/MainFrameModel.java.html#L40">40</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/gui/TreeTable.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A25" href = "#A25">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 9 (max allowed is 7) classes [AbstractAction, ArrayList, CodeSelector, Dimension, ListToTreeSelectionModelWrapper, MouseAdapter, TreeTableCellEditor, TreeTableCellRenderer, TreeTableModelAdapter].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/gui/TreeTable.java.html#L56">56</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td><a name="A26" href = "#A26">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 8 (max allowed is 7) classes [AbstractAction, CodeSelector, Dimension, ListToTreeSelectionModelWrapper, MouseAdapter, TreeTableCellEditor, TreeTableCellRenderer, TreeTableModelAdapter].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/gui/TreeTable.java.html#L56">56</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/utils/CommonUtils.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A27" href = "#A27">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 11 (max allowed is 7) classes [CheckstyleException, File, IllegalArgumentException, IllegalStateException, Integer, Object, String, URL, byte, double, int].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/utils/CommonUtils.java.html#L47">47</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td><a name="A28" href = "#A28">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 8 (max allowed is 7) classes [File, Integer, Object, String, URL, byte, double, int].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/main/java/com/puppycrawl/tools/checkstyle/utils/CommonUtils.java.html#L47">47</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/java/com/puppycrawl/tools/checkstyle/BaseCheckTestSupport.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A29" href = "#A29">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 13 (max allowed is 7) classes [ArrayList, BriefUtLogger, ByteArrayInputStream, ByteArrayOutputStream, Checker, DefaultConfiguration, File, InputStreamReader, LineNumberReader, LocalizedMessage.Utf8Control, MessageFormat, String, StringBuilder].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/java/com/puppycrawl/tools/checkstyle/BaseCheckTestSupport.java.html#L51">51</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td><a name="A30" href = "#A30">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 12 (max allowed is 7) classes [BriefUtLogger, ByteArrayInputStream, ByteArrayOutputStream, Checker, DefaultConfiguration, File, InputStreamReader, LineNumberReader, LocalizedMessage.Utf8Control, MessageFormat, String, StringBuilder].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/java/com/puppycrawl/tools/checkstyle/BaseCheckTestSupport.java.html#L51">51</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/java/com/puppycrawl/tools/checkstyle/CheckerTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A31" href = "#A31">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 18 (max allowed is 7) classes [ArrayList, BriefUtLogger, Checker, DebugAuditAdapter, DebugFilter, DefaultConfiguration, DynamicalResourceHolderCheck, File, FileInputStream, IOError, InternalError, LocalizedMessage, Object, PackageObjectFactory, Properties, TemporaryFolder, TestBeforeExecutionFileFilter, TreeSet].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/java/com/puppycrawl/tools/checkstyle/CheckerTest.java.html#L67">67</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td><a name="A32" href = "#A32">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 17 (max allowed is 7) classes [BriefUtLogger, Checker, DebugAuditAdapter, DebugFilter, DefaultConfiguration, DynamicalResourceHolderCheck, File, FileInputStream, IOError, InternalError, LocalizedMessage, Object, PackageObjectFactory, Properties, TemporaryFolder, TestBeforeExecutionFileFilter, TreeSet].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/java/com/puppycrawl/tools/checkstyle/CheckerTest.java.html#L67">67</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A33" href = "#A33">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 11 (max allowed is 7) classes [ArrayList, Assertion, Class, File, Integer, LocalizedMessage, String, StringBuilder, SystemErrRule, SystemOutRule, TemporaryFolder].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java.html#L61">61</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td><a name="A34" href = "#A34">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 10 (max allowed is 7) classes [Assertion, Class, File, Integer, LocalizedMessage, String, StringBuilder, SystemErrRule, SystemOutRule, TemporaryFolder].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java.html#L61">61</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/java/com/puppycrawl/tools/checkstyle/TreeWalkerTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A35" href = "#A35">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 9 (max allowed is 7) classes [ArrayList, BufferedWriter, DefaultConfiguration, File, FileOutputStream, OutputStreamWriter, PackageObjectFactory, TemporaryFolder, TreeWalker].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/java/com/puppycrawl/tools/checkstyle/TreeWalkerTest.java.html#L51">51</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td><a name="A36" href = "#A36">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 8 (max allowed is 7) classes [BufferedWriter, DefaultConfiguration, File, FileOutputStream, OutputStreamWriter, PackageObjectFactory, TemporaryFolder, TreeWalker].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/java/com/puppycrawl/tools/checkstyle/TreeWalkerTest.java.html#L51">51</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/java/com/puppycrawl/tools/checkstyle/XMLLoggerTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A37" href = "#A37">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 11 (max allowed is 7) classes [ArrayList, AuditEvent, BufferedReader, ByteArrayInputStream, ByteArrayOutputStream, InputStreamReader, LocalizedMessage, RuntimeException, String, TestException, XMLLogger].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/java/com/puppycrawl/tools/checkstyle/XMLLoggerTest.java.html#L49">49</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td><a name="A38" href = "#A38">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 8 (max allowed is 7) classes [AuditEvent, BufferedReader, ByteArrayInputStream, ByteArrayOutputStream, InputStreamReader, LocalizedMessage, String, XMLLogger].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/java/com/puppycrawl/tools/checkstyle/XMLLoggerTest.java.html#L49">49</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/java/com/puppycrawl/tools/checkstyle/checks/indentation/IndentationCheckTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A39" href = "#A39">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 10 (max allowed is 7) classes [ArrayList, BufferedReader, File, FileInputStream, HandlerFactory, IllegalStateException, IndentAudit, IndentComment, IndentationCheck, InputStreamReader].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/java/com/puppycrawl/tools/checkstyle/checks/indentation/IndentationCheckTest.java.html#L58">58</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td><a name="A40" href = "#A40">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 8 (max allowed is 7) classes [BufferedReader, File, FileInputStream, HandlerFactory, IndentAudit, IndentComment, IndentationCheck, InputStreamReader].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/java/com/puppycrawl/tools/checkstyle/checks/indentation/IndentationCheckTest.java.html#L58">58</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsPagesTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A41" href = "#A41">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 11 (max allowed is 7) classes [ArrayList, Checker, CheckstyleException, File, InputSource, Properties, PropertiesExpander, String, StringBuilder, StringReader, TreeSet].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsPagesTest.java.html#L69">69</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td><a name="A42" href = "#A42">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 9 (max allowed is 7) classes [Checker, File, InputSource, Properties, PropertiesExpander, String, StringBuilder, StringReader, TreeSet].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsPagesTest.java.html#L69">69</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources/com/puppycrawl/tools/checkstyle/checks/coding/InputFinalLocalVariableFalsePositives.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A43" href = "#A43">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 9 (max allowed is 7) classes [ArrayIndexOutOfBoundsException, ArrayList, Exception, IllegalStateException, Integer, InternalError, NumberFormatException, String, StringBuffer].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources/com/puppycrawl/tools/checkstyle/checks/coding/InputFinalLocalVariableFalsePositives.java.html#L6">6</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources/com/puppycrawl/tools/checkstyle/checks/indentation/InputCommentsIndentationCommentIsAtTheEndOfBlock.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A44" href = "#A44">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 8 (max allowed is 7) classes [DetailAST, Exception, Object, Runnable, String, Thread, int, java.util.ArrayList].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources/com/puppycrawl/tools/checkstyle/checks/indentation/InputCommentsIndentationCommentIsAtTheEndOfBlock.java.html#L9">9</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources/com/puppycrawl/tools/checkstyle/grammars/InputRegressionJavaClass1.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A45" href = "#A45">#</a></td>
+								<td>warning</td>
+								<td>ClassDataAbstractionCoupling</td>
+								<td>Class Data Abstraction Coupling is 8 (max allowed is 7) classes [ArrayIndexOutOfBoundsException, ArrayList, BufferedReader, Exception, IOException, InputStreamReader, String, int].</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/checkstyle/src/test/resources/com/puppycrawl/tools/checkstyle/grammars/InputRegressionJavaClass1.java.html#L17">17</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
