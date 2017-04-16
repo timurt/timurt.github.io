@@ -1,0 +1,1073 @@
+<html>
+	<head>
+		<title>checkstyle xml difference report</title>
+		<style type="text/css" media="all">@import url("./css/maven-base.css");@import url("./css/maven-theme.css"); );</style>
+		<http-equiv http-equiv="Content-Language" content="en"></http-equiv>
+	</head>
+	<body class="composite">
+		<div id="contentBox">
+			<div class="section">
+				<h2 a="Checkstyle XML difference report">Checkstyle XML difference report</h2>
+				This is symmetric difference generated from two checkstyle-result.xml reports. <br/>
+				All matching records from each XML file are deleted, then remaining records are merged into single report. <br>
+		        <a href="https://github.com/checkstyle/contribution/tree/master/patch-diff-report-tool">Utility that generated this report.</a>
+			</div>
+
+			
+				<h2 a="Checkstyle configuration report">Checkstyle configuration report</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+							<tr class="a">
+								<th>Module Name</th>
+								<th>Base properties</th>
+								<th>Patch properties</th>
+							</tr>
+							
+								
+									<tr>
+										<td class="c">Checker</td>
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">BeforeExecutionExclusionFileFilter</td>
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">TreeWalker</td>
+										
+										<td class="c">
+											
+										</td>
+										
+										
+										<td class="c">
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">IllegalImport</td>
+										<td class="b">
+											
+												illegalPkgs
+												
+													<li>java.sql</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="a">
+											
+												regexp
+												
+													<li>false</li>
+												
+												<br/>
+											
+												illegalPkgs
+												
+													<li></li>
+												
+												<br/>
+											
+												illegalClasses
+												
+													<li>java.sql.Connection, java.sql.SQLException, java.sql.DatabaseMetaData, java.sql.Driver, java.sql.DriverManager,java.sql.Date,java.sql.Blob,java.sql.Clob,java.sql.NClob,java.sql.Statement,java.sql.CallableStatement,java.sql.PreparedStatement,java.sql.SQLWarning,java.sql.ResultSet,java.sql.ResultSetMetaData,java.sql.Types,java.sql.DriverPropertyInfo, java.sql.Timestamp</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+									</tr>
+									
+								
+									
+								
+									
+								
+								
+					</table>	
+				</div>
+			
+
+			<div class="section">
+				<h2 a="Summary:">Summary:</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+						<tr class="a">
+							<th>Report id</th>
+							<th>Files</th>
+							<th>Unique rows</th>
+							
+								<th>Severity-warning</th>
+							
+						</tr>
+						<tr class="b">
+							<td>base</td>
+							<td id="filesBase">5911</td>
+							<td id="totalBase">614</td>
+							
+								<td id="warningSeverityNumBase">614</td>
+							
+						</tr>
+						<tr class="a">
+							<td>patch</td>
+							<td id="filesPatch">5911</td>
+							<td id="totalPatch">573</td>
+							
+								<td id="warningSeverityNumPatch">573</td>
+							
+						</tr>
+						<tr class="d">
+							<td>difference</td>
+							<td id="filesDiff">20</td>
+							<td id="totalDiff">41</td>
+							
+								<td id="warningSeverityNumDiff">41</td>
+							
+						<tr>
+					</table>
+
+					<br />
+					Number of unique base messages reported below: <span id="uniqueMessagesBase">41</span><br />
+					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">0</span><br />
+				</div>
+			</div>
+
+			<div class="section">
+				<h2 a="Unique rows:">Unique rows:</h2>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-expression/src/test/java/org/springframework/expression/spel/ast/OpPlusTests.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A1" href = "#A1">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.Time.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-expression/src/test/java/org/springframework/expression/spel/ast/OpPlusTests.java.html#L19">19</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/core/JdbcTemplate.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A2" href = "#A2">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.BatchUpdateException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/core/JdbcTemplate.java.html#L23">23</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/core/StatementCreatorUtils.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A3" href = "#A3">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLFeatureNotSupportedException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/core/StatementCreatorUtils.java.html#L28">28</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/datasource/ConnectionHolder.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A4" href = "#A4">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.Savepoint.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/datasource/ConnectionHolder.java.html#L21">21</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/datasource/JdbcTransactionObjectSupport.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A5" href = "#A5">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.Savepoint.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/datasource/JdbcTransactionObjectSupport.java.html#L20">20</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/JdbcUtils.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A6" href = "#A6">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLFeatureNotSupportedException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/JdbcUtils.java.html#L29">29</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLErrorCodeSQLExceptionTranslator.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A7" href = "#A7">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.BatchUpdateException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLErrorCodeSQLExceptionTranslator.java.html#L20">20</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLExceptionSubclassTranslator.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A8" href = "#A8">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLDataException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLExceptionSubclassTranslator.java.html#L19">19</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A9" href = "#A9">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLFeatureNotSupportedException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLExceptionSubclassTranslator.java.html#L21">21</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A10" href = "#A10">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLIntegrityConstraintViolationException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLExceptionSubclassTranslator.java.html#L22">22</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A11" href = "#A11">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLInvalidAuthorizationSpecException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLExceptionSubclassTranslator.java.html#L23">23</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A12" href = "#A12">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLNonTransientConnectionException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLExceptionSubclassTranslator.java.html#L24">24</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A13" href = "#A13">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLNonTransientException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLExceptionSubclassTranslator.java.html#L25">25</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A14" href = "#A14">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLRecoverableException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLExceptionSubclassTranslator.java.html#L26">26</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A15" href = "#A15">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLSyntaxErrorException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLExceptionSubclassTranslator.java.html#L27">27</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A16" href = "#A16">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLTimeoutException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLExceptionSubclassTranslator.java.html#L28">28</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A17" href = "#A17">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLTransactionRollbackException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLExceptionSubclassTranslator.java.html#L29">29</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A18" href = "#A18">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLTransientConnectionException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLExceptionSubclassTranslator.java.html#L30">30</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A19" href = "#A19">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLTransientException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLExceptionSubclassTranslator.java.html#L31">31</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/rowset/ResultSetWrappingSqlRowSet.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A20" href = "#A20">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.Time.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/rowset/ResultSetWrappingSqlRowSet.java.html#L24">24</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/rowset/SqlRowSet.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A21" href = "#A21">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.Time.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/rowset/SqlRowSet.java.html#L22">22</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/xml/Jdbc4SqlXmlHandler.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A22" href = "#A22">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLXML.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/main/java/org/springframework/jdbc/support/xml/Jdbc4SqlXmlHandler.java.html#L25">25</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/core/JdbcTemplateTests.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A23" href = "#A23">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.BatchUpdateException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/core/JdbcTemplateTests.java.html#L19">19</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/core/StatementCreatorUtilsTests.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A24" href = "#A24">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.ParameterMetaData.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/core/StatementCreatorUtilsTests.java.html#L21">21</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/datasource/DataSourceTransactionManagerTests.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A25" href = "#A25">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.Savepoint.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/datasource/DataSourceTransactionManagerTests.java.html#L23">23</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLErrorCodeSQLExceptionTranslatorTests.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A26" href = "#A26">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.BatchUpdateException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLErrorCodeSQLExceptionTranslatorTests.java.html#L19">19</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A27" href = "#A27">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.DataTruncation.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLErrorCodeSQLExceptionTranslatorTests.java.html#L20">20</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLExceptionSubclassFactory.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A28" href = "#A28">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLDataException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLExceptionSubclassFactory.java.html#L19">19</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A29" href = "#A29">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLFeatureNotSupportedException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLExceptionSubclassFactory.java.html#L21">21</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A30" href = "#A30">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLIntegrityConstraintViolationException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLExceptionSubclassFactory.java.html#L22">22</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A31" href = "#A31">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLInvalidAuthorizationSpecException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLExceptionSubclassFactory.java.html#L23">23</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A32" href = "#A32">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLNonTransientConnectionException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLExceptionSubclassFactory.java.html#L24">24</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A33" href = "#A33">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLRecoverableException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLExceptionSubclassFactory.java.html#L25">25</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A34" href = "#A34">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLSyntaxErrorException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLExceptionSubclassFactory.java.html#L26">26</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A35" href = "#A35">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLTimeoutException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLExceptionSubclassFactory.java.html#L27">27</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A36" href = "#A36">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLTransactionRollbackException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLExceptionSubclassFactory.java.html#L28">28</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A37" href = "#A37">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.SQLTransientConnectionException.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLExceptionSubclassFactory.java.html#L29">29</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/support/rowset/ResultSetWrappingRowSetTests.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A38" href = "#A38">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.Time.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-jdbc/src/test/java/org/springframework/jdbc/support/rowset/ResultSetWrappingRowSetTests.java.html#L25">25</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-orm-hibernate4/src/test/java/org/springframework/orm/hibernate4/HibernateTransactionManagerTests.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A39" href = "#A39">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.Savepoint.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-orm-hibernate4/src/test/java/org/springframework/orm/hibernate4/HibernateTransactionManagerTests.java.html#L23">23</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-orm/src/test/java/org/springframework/orm/hibernate3/HibernateTransactionManagerTests.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A40" href = "#A40">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.Savepoint.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-orm/src/test/java/org/springframework/orm/hibernate3/HibernateTransactionManagerTests.java.html#L22">22</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-orm/src/test/java/org/springframework/orm/jdo/JdoTransactionManagerTests.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A41" href = "#A41">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.Savepoint.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/spring-framework/spring-orm/src/test/java/org/springframework/orm/jdo/JdoTransactionManagerTests.java.html#L22">22</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

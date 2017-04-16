@@ -1,0 +1,303 @@
+<html>
+	<head>
+		<title>checkstyle xml difference report</title>
+		<style type="text/css" media="all">@import url("./css/maven-base.css");@import url("./css/maven-theme.css"); );</style>
+		<http-equiv http-equiv="Content-Language" content="en"></http-equiv>
+	</head>
+	<body class="composite">
+		<div id="contentBox">
+			<div class="section">
+				<h2 a="Checkstyle XML difference report">Checkstyle XML difference report</h2>
+				This is symmetric difference generated from two checkstyle-result.xml reports. <br/>
+				All matching records from each XML file are deleted, then remaining records are merged into single report. <br>
+		        <a href="https://github.com/checkstyle/contribution/tree/master/patch-diff-report-tool">Utility that generated this report.</a>
+			</div>
+
+			
+				<h2 a="Checkstyle configuration report">Checkstyle configuration report</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+							<tr class="a">
+								<th>Module Name</th>
+								<th>Base properties</th>
+								<th>Patch properties</th>
+							</tr>
+							
+								
+									<tr>
+										<td class="c">Checker</td>
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">BeforeExecutionExclusionFileFilter</td>
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">TreeWalker</td>
+										
+										<td class="c">
+											
+										</td>
+										
+										
+										<td class="c">
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">IllegalImport</td>
+										<td class="b">
+											
+												illegalPkgs
+												
+													<li>java.sql</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="a">
+											
+												regexp
+												
+													<li>false</li>
+												
+												<br/>
+											
+												illegalPkgs
+												
+													<li></li>
+												
+												<br/>
+											
+												illegalClasses
+												
+													<li>java.sql.Connection, java.sql.SQLException, java.sql.DatabaseMetaData, java.sql.Driver, java.sql.DriverManager,java.sql.Date,java.sql.Blob,java.sql.Clob,java.sql.NClob,java.sql.Statement,java.sql.CallableStatement,java.sql.PreparedStatement,java.sql.SQLWarning,java.sql.ResultSet,java.sql.ResultSetMetaData,java.sql.Types,java.sql.DriverPropertyInfo, java.sql.Timestamp</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+									</tr>
+									
+								
+									
+								
+									
+								
+								
+					</table>	
+				</div>
+			
+
+			<div class="section">
+				<h2 a="Summary:">Summary:</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+						<tr class="a">
+							<th>Report id</th>
+							<th>Files</th>
+							<th>Unique rows</th>
+							
+								<th>Severity-warning</th>
+							
+						</tr>
+						<tr class="b">
+							<td>base</td>
+							<td id="filesBase">2752</td>
+							<td id="totalBase">175</td>
+							
+								<td id="warningSeverityNumBase">175</td>
+							
+						</tr>
+						<tr class="a">
+							<td>patch</td>
+							<td id="filesPatch">2752</td>
+							<td id="totalPatch">172</td>
+							
+								<td id="warningSeverityNumPatch">172</td>
+							
+						</tr>
+						<tr class="d">
+							<td>difference</td>
+							<td id="filesDiff">3</td>
+							<td id="totalDiff">3</td>
+							
+								<td id="warningSeverityNumDiff">3</td>
+							
+						<tr>
+					</table>
+
+					<br />
+					Number of unique base messages reported below: <span id="uniqueMessagesBase">3</span><br />
+					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">0</span><br />
+				</div>
+			</div>
+
+			<div class="section">
+				<h2 a="Unique rows:">Unique rows:</h2>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/findbugs/findbugsTestCases/src/java/bugIdeas/Ideas_2011_08_01.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A1" href = "#A1">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.Time.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/findbugs/findbugsTestCases/src/java/bugIdeas/Ideas_2011_08_01.java.html#L3">3</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/findbugs/findbugsTestCases/src/java/sfBugsNew/Feature314.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A2" href = "#A2">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.*.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/findbugs/findbugsTestCases/src/java/sfBugsNew/Feature314.java.html#L4">4</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/tima/gsoc/contribution/checkstyle-tester/repositories/findbugs/findbugsTestCases/src/java/sfBugsNew/Feature316.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A3" href = "#A3">#</a></td>
+								<td>warning</td>
+								<td>IllegalImport</td>
+								<td>Import from illegal package - java.sql.*.</td>
+								<td><a href = "xref/home/tima/gsoc/contribution/checkstyle-tester/repositories/findbugs/findbugsTestCases/src/java/sfBugsNew/Feature316.java.html#L3">3</a></td>
+								
+									
+									<td>1</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
