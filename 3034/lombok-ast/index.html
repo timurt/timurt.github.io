@@ -29,9 +29,21 @@
 										
 										<td class="c">
 											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
 												charset
 												
 													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
 												
 												<br/>
 											
@@ -40,9 +52,21 @@
 										
 										<td class="c">
 											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
 												charset
 												
 													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
 												
 												<br/>
 											
@@ -767,6 +791,23 @@
 										
 									</tr>
 									
+										
+									<tr>
+										<td class="c">FileContentsHolder</td>
+										
+										<td class="c">
+											
+										</td>
+										
+										
+										<td class="c">
+											
+										</td>
+										
+									</tr>
+									
+								
+									
 								
 									
 								
@@ -784,43 +825,185 @@
 							<th>Files</th>
 							<th>Violations</th>
 							
+								<th>Severity-warning</th>
+							
 								<th>Severity-error</th>
 							
 						</tr>
 						<tr class="b">
 							<td>base</td>
 							<td id="filesBase">225</td>
-							<td id="totalBase">4221</td>
+							<td id="totalBase">4222</td>
 							
-								<td id="errorSeverityNumBase">4221</td>
+								<td id="warningSeverityNumBase">4221</td>
+							
+								<td id="errorSeverityNumBase">1</td>
 							
 						</tr>
 						<tr class="a">
 							<td>patch</td>
 							<td id="filesPatch">225</td>
-							<td id="totalPatch">4221</td>
+							<td id="totalPatch">4222</td>
 							
-								<td id="errorSeverityNumPatch">4221</td>
+								<td id="warningSeverityNumPatch">4221</td>
+							
+								<td id="errorSeverityNumPatch">1</td>
 							
 						</tr>
 						<tr class="d">
 							<td>difference</td>
-							<td id="filesDiff">0</td>
-							<td id="totalDiff">0</td>
+							<td id="filesDiff">1</td>
+							<td id="totalDiff">2</td>
 							
-								<td id="errorSeverityNumDiff">0</td>
+								<td id="warningSeverityNumDiff">0</td>
+							
+								<td id="errorSeverityNumDiff">2</td>
 							
 						<tr>
 					</table>
 
 					<br />
-					Number of unique base messages reported below: <span id="uniqueMessagesBase">0</span><br />
-					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">0</span><br />
+					Number of unique base messages reported below: <span id="uniqueMessagesBase">1</span><br />
+					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">1</span><br />
 				</div>
 			</div>
 
 			<div class="section">
 				<h2 a="Violations:">Violations:</h2>
+				<div class="section">
+					<h3>/home/timur/Documents/contribution/checkstyle-tester/repositories/lombok-ast/test/resources/parseErrors/Bad1.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td><a name="A1" href = "#A1">#</a></td>
+								<td>error</td>
+								<td>Checker</td>
+								<td>Got an exception - com.puppycrawl.tools.checkstyle.api.CheckstyleException: MismatchedTokenException occurred during the analysis of file /home/timur/Documents/contribution/checkstyle-tester/repositories/lombok-ast/test/resources/parseErrors/Bad1.java.<br />
+ at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:198)<br />
+ at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:79)<br />
+ at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:316)<br />
+ at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:286)<br />
+ at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:213)<br />
+ at org.apache.maven.plugin.checkstyle.exec.DefaultCheckstyleExecutor.executeCheckstyle(DefaultCheckstyleExecutor.java:252)<br />
+ at org.apache.maven.plugin.checkstyle.AbstractCheckstyleReport.executeReport(AbstractCheckstyleReport.java:473)<br />
+ at org.apache.maven.plugin.checkstyle.CheckstyleReport.executeReport(CheckstyleReport.java:154)<br />
+ at org.apache.maven.reporting.AbstractMavenReport.generate(AbstractMavenReport.java:255)<br />
+ at org.apache.maven.plugins.site.ReportDocumentRenderer.renderDocument(ReportDocumentRenderer.java:219)<br />
+ at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.renderModule(DefaultSiteRenderer.java:319)<br />
+ at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.render(DefaultSiteRenderer.java:135)<br />
+ at org.apache.maven.plugins.site.SiteMojo.renderLocale(SiteMojo.java:175)<br />
+ at org.apache.maven.plugins.site.SiteMojo.execute(SiteMojo.java:138)<br />
+ at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)<br />
+ at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)<br />
+ at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:154)<br />
+ at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:146)<br />
+ at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)<br />
+ at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)<br />
+ at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)<br />
+ at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)<br />
+ at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:309)<br />
+ at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:194)<br />
+ at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:107)<br />
+ at org.apache.maven.cli.MavenCli.execute(MavenCli.java:993)<br />
+ at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:345)<br />
+ at org.apache.maven.cli.MavenCli.main(MavenCli.java:191)<br />
+ at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+ at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+ at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+ at java.lang.reflect.Method.invoke(Method.java:498)<br />
+ at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)<br />
+ at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)<br />
+ at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)<br />
+ at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)<br />
+Caused by: /home/timur/Documents/contribution/checkstyle-tester/repositories/lombok-ast/test/resources/parseErrors/Bad1.java:23:3: expecting EOF, found &#39;int&#39;<br />
+ at antlr.Parser.match(Parser.java:211)<br />
+ at com.puppycrawl.tools.checkstyle.grammars.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:211)<br />
+ at com.puppycrawl.tools.checkstyle.TreeWalker.parse(TreeWalker.java:447)<br />
+ at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:178)<br />
+ ... 35 more<br />
+</td>
+								
+									
+									<td><a href = "xref/home/timur/Documents/contribution/checkstyle-tester/repositories/lombok-ast/test/resources/parseErrors/Bad1.java.html#L0">0</a></td>
+								
+								
+									<td> </td>
+									
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td><a name="A2" href = "#A2">#</a></td>
+								<td>error</td>
+								<td>Checker</td>
+								<td>Got an exception - com.puppycrawl.tools.checkstyle.api.CheckstyleException: MismatchedTokenException occurred during the analysis of file /home/timur/Documents/contribution/checkstyle-tester/repositories/lombok-ast/test/resources/parseErrors/Bad1.java.<br />
+ at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:196)<br />
+ at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:78)<br />
+ at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:316)<br />
+ at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:286)<br />
+ at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:213)<br />
+ at org.apache.maven.plugin.checkstyle.exec.DefaultCheckstyleExecutor.executeCheckstyle(DefaultCheckstyleExecutor.java:252)<br />
+ at org.apache.maven.plugin.checkstyle.AbstractCheckstyleReport.executeReport(AbstractCheckstyleReport.java:473)<br />
+ at org.apache.maven.plugin.checkstyle.CheckstyleReport.executeReport(CheckstyleReport.java:154)<br />
+ at org.apache.maven.reporting.AbstractMavenReport.generate(AbstractMavenReport.java:255)<br />
+ at org.apache.maven.plugins.site.ReportDocumentRenderer.renderDocument(ReportDocumentRenderer.java:219)<br />
+ at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.renderModule(DefaultSiteRenderer.java:319)<br />
+ at org.apache.maven.doxia.siterenderer.DefaultSiteRenderer.render(DefaultSiteRenderer.java:135)<br />
+ at org.apache.maven.plugins.site.SiteMojo.renderLocale(SiteMojo.java:175)<br />
+ at org.apache.maven.plugins.site.SiteMojo.execute(SiteMojo.java:138)<br />
+ at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)<br />
+ at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)<br />
+ at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:154)<br />
+ at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:146)<br />
+ at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)<br />
+ at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)<br />
+ at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)<br />
+ at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)<br />
+ at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:309)<br />
+ at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:194)<br />
+ at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:107)<br />
+ at org.apache.maven.cli.MavenCli.execute(MavenCli.java:993)<br />
+ at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:345)<br />
+ at org.apache.maven.cli.MavenCli.main(MavenCli.java:191)<br />
+ at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+ at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+ at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+ at java.lang.reflect.Method.invoke(Method.java:498)<br />
+ at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)<br />
+ at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)<br />
+ at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)<br />
+ at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)<br />
+Caused by: /home/timur/Documents/contribution/checkstyle-tester/repositories/lombok-ast/test/resources/parseErrors/Bad1.java:23:3: expecting EOF, found &#39;int&#39;<br />
+ at antlr.Parser.match(Parser.java:211)<br />
+ at com.puppycrawl.tools.checkstyle.grammars.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:211)<br />
+ at com.puppycrawl.tools.checkstyle.TreeWalker.parse(TreeWalker.java:445)<br />
+ at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:176)<br />
+ ... 35 more<br />
+</td>
+								
+									
+									<td><a href = "xref/home/timur/Documents/contribution/checkstyle-tester/repositories/lombok-ast/test/resources/parseErrors/Bad1.java.html#L0">0</a></td>
+								
+								
+									<td> </td>
+									
+								
+							</tr>
+						
+					</table>
+				</div>
 			</div>
 		</div>
 	</body>
