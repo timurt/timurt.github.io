@@ -1,0 +1,67 @@
+<html><body>
+<h3>ExplicitInitializationCheck</h3>
+
+<h4>Initial Config File</h4>
+<code>/var/tmp $ cat checks.xml</code>
+<xmp>
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+          "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
+          "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+
+<module name="Checker">
+    <property name="charset" value="UTF-8"/>
+
+    <module name="TreeWalker">
+		    <module name="ExplicitInitialization"/>
+    </module>
+</module>
+</xmp>
+
+<h4>Java Class</h4>
+<code>/var/tmp $ cat InputTest.java</code>
+<pre>
+public class InputTest {
+    private int a = 0;
+}
+</pre>
+
+<h4>Executing Checkstyle</h4>
+<code>/var/tmp $ java -jar checkstyle-8.8.1-SNAPSHOT-all.jar -c checks.xml InputTest.java</code>
+<pre>
+Starting audit...
+[ERROR] /var/tmp/InputTest.java:2:17: Variable 'a' explicitly initialized to '0' (default value for its type). [ExplicitInitialization]
+Audit done.
+Checkstyle ends with 1 errors.
+</pre>
+
+<h4>Generating Xpath queries</h4>
+<code>/var/tmp $ java -jar checkstyle-8.8.1-SNAPSHOT-all.jar -s 2:17 InputTest.java</code>
+<pre>
+NO OUTPUT
+</pre>
+
+<h4>Generating AST tree</h4>
+<code>/var/tmp $ java -jar checkstyle-8.8.1-SNAPSHOT-all.jar -J InputTest.java</code>
+<pre>
+CLASS_DEF -> CLASS_DEF [1:0]
+|--MODIFIERS -> MODIFIERS [1:0]
+|   `--LITERAL_PUBLIC -> public [1:0]
+|--LITERAL_CLASS -> class [1:7]
+|--IDENT -> InputTest [1:13]
+`--OBJBLOCK -> OBJBLOCK [1:23]
+    |--LCURLY -> { [1:23]
+    |--VARIABLE_DEF -> VARIABLE_DEF [2:4]
+    |   |--MODIFIERS -> MODIFIERS [2:4]
+    |   |   `--LITERAL_PRIVATE -> private [2:4]
+    |   |--TYPE -> TYPE [2:12]
+    |   |   `--LITERAL_INT -> int [2:12]
+    |   |--IDENT -> a [2:16]
+    |   |--ASSIGN -> = [2:18]
+    |   |   `--EXPR -> EXPR [2:20]
+    |   |       `--NUM_INT -> 0 [2:20]
+    |   `--SEMI -> ; [2:21]
+    `--RCURLY -> } [3:0]
+</pre>
+
+</body></html>

@@ -1,0 +1,107 @@
+<html><body>
+<h3>ImportControlCheck</h3>
+
+<h4>Initial Config File</h4>
+<code>/var/tmp $ cat checks.xml</code>
+<xmp>
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+          "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
+          "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+
+<module name="Checker">
+    <property name="charset" value="UTF-8"/>
+
+    <module name="TreeWalker">
+        <module name="ImportControl">
+          <property name="file" value="import-control.xml"/>
+        </module>
+    </module>
+</module>
+</xmp>
+
+<h4>Java Class</h4>
+<code>/var/tmp $ cat InputTest.java</code>
+<pre>
+package com.puppycrawl.tools.checkstyle;
+
+import java.util.Scanner;
+
+public class InputTest {
+}
+
+</pre>
+
+<h4>Import Control Config File</h4>
+<code>/var/tmp $ cat import-control.xml</code>
+<xmp>
+<?xml version="1.0"?>
+<!DOCTYPE import-control PUBLIC
+    "-//Puppy Crawl//DTD Import Control 1.3//EN"
+    "http://checkstyle.sourceforge.net/dtds/import_control_1_3.dtd">
+
+<import-control pkg="com.puppycrawl.tools.checkstyle">
+  <disallow pkg="java.util"/>
+</import-control>
+</xmp>
+
+<h4>Executing Checkstyle</h4>
+<code>/var/tmp $ java -jar checkstyle-8.8.1-SNAPSHOT-all.jar -c checks.xml InputTest.java</code>
+<pre>
+Starting audit...
+[ERROR] /var/tmp/InputTest.java:3:1: Disallowed import - java.util.Scanner. [ImportControl]
+Audit done.
+Checkstyle ends with 1 errors.
+</pre>
+
+<h4>Generating Xpath queries</h4>
+<code>/var/tmp $ java -jar checkstyle-8.8.1-SNAPSHOT-all.jar -s 3:1 InputTest.java</code>
+<pre>
+/IMPORT
+</pre>
+
+<h4>Suppressions File</h4>
+<code>/var/tmp $ cat suppressions_xpath.xml</code>
+<xmp>
+<?xml version="1.0"?>
+<!DOCTYPE suppressions PUBLIC
+    "-//Puppy Crawl//DTD Suppressions Xpath Experimental 1.2//EN"
+    "http://checkstyle.sourceforge.net/dtds/suppressions_1_2_xpath_experimental.dtd">
+
+<suppressions>
+    <suppress-xpath checks="ImportC1ontrol"
+                    query="/IMPORT"/>
+</suppressions>
+</xmp>
+
+<h4>Updated Config File</h4>
+<code>/var/tmp $ cat checks.xml</code>
+<xmp>
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+          "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
+          "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+
+<module name="Checker">
+    <property name="charset" value="UTF-8"/>
+
+    <module name="TreeWalker">
+        <module name="ImportControl">
+          <property name="file" value="import-control.xml"/>
+        </module>
+
+        <module name="SuppressionXpathFilter">
+            <property name="file" value="suppressions_xpath.xml"/>
+        </module>
+    </module>
+</module>
+</xmp>
+
+<h4>Executing Checkstyle</h4>
+<code>/var/tmp $ java -jar checkstyle-8.8.1-SNAPSHOT-all.jar -c checks.xml InputTest.java</code>
+<pre>
+Starting audit...
+Audit done.
+</pre>
+
+</body></html>
