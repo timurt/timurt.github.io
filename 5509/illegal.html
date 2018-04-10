@@ -1,5 +1,5 @@
 <html><body>
-<h3>ExplicitInitializationCheck</h3>
+<h3>RequireThisCheck</h3>
 
 <h4>Initial Config File</h4>
 <code>/var/tmp $ cat checks.xml</code>
@@ -13,7 +13,7 @@
     <property name="charset" value="UTF-8"/>
 
     <module name="TreeWalker">
-		    <module name="ExplicitInitialization"/>
+      <module name="IllegalThrows"/>
     </module>
 </module>
 </xmp>
@@ -22,7 +22,9 @@
 <code>/var/tmp $ cat InputTest.java</code>
 <pre>
 public class InputTest {
-    private int a = 0;
+  public void sayHello() throws RuntimeException
+    {
+    }
 }
 </pre>
 
@@ -30,15 +32,15 @@ public class InputTest {
 <code>/var/tmp $ java -jar checkstyle-8.10-SNAPSHOT-all.jar -c checks.xml InputTest.java</code>
 <pre>
 Starting audit...
-[ERROR] /var/tmp/InputTest.java:2:17: Variable 'a' explicitly initialized to '0' (default value for its type). [ExplicitInitialization]
+[ERROR] /Users/timurtibeyev/Documents/test/IllegalThrowsCheckFixed/InputTest.java:2:39: Throwing 'RuntimeException' is not allowed. [IllegalThrows]
 Audit done.
 Checkstyle ends with 1 errors.
 </pre>
 
 <h4>Generating Xpath queries</h4>
-<code>/var/tmp $ java -jar checkstyle-8.10-SNAPSHOT-all.jar -s 2:17 InputTest.java</code>
+<code>/var/tmp $ java -jar checkstyle-8.10-SNAPSHOT-all.jar -s 2:39 InputTest.java</code>
 <pre>
-/CLASS_DEF[@text='InputTest']/OBJBLOCK/VARIABLE_DEF[@text='a']/IDENT
+/CLASS_DEF[@text='InputTest']/OBJBLOCK/METHOD_DEF[@text='sayHello']/LITERAL_THROWS[@text='RuntimeException']/IDENT
 </pre>
 
 <h4>Suppressions File</h4>
@@ -50,8 +52,8 @@ Checkstyle ends with 1 errors.
     "http://checkstyle.sourceforge.net/dtds/suppressions_1_2_xpath_experimental.dtd">
 
 <suppressions>
-    <suppress-xpath checks="ExplicitInitialization"
-                    query="/CLASS_DEF[@text='InputTest']/OBJBLOCK/VARIABLE_DEF[@text='a']/IDENT"/>
+    <suppress-xpath checks="IllegalThrows"
+                    query="/CLASS_DEF[@text='InputTest']/OBJBLOCK/METHOD_DEF[@text='sayHello']/LITERAL_THROWS[@text='RuntimeException']/IDENT"/>
 </suppressions>
 </xmp>
 
@@ -67,11 +69,11 @@ Checkstyle ends with 1 errors.
     <property name="charset" value="UTF-8"/>
 
     <module name="TreeWalker">
-        <module name="ExplicitInitialization"/>
+      <module name="IllegalThrows"/>
 
-        <module name="SuppressionXpathFilter">
-            <property name="file" value="suppressions_xpath.xml"/>
-        </module>
+      <module name="SuppressionXpathFilter">
+        <property name="file" value="suppressions_xpath.xml"/>
+      </module>
     </module>
 </module>
 </xmp>
@@ -82,5 +84,4 @@ Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 </pre>
-
 </body></html>
